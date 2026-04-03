@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ReactModal__Content {
+  background-color: white !important;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+
+  h2 {
+    margin: 0 0 20px 0;
+  }
+
+  button {
+    background-color: #f44336;
+    margin-top: 10px;
+  }
+
+  div {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+}

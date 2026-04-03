@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: rgba(0,0,0,0.15) 1.95px 1.95px 2.6px;
+}
+
+label {
+  display: block;
+  margin: 12px 0 5px 0;
+}
+
+input,
+select,
+textarea {
+  /* width: 80%; */
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.8;
+}
+/* .radio-group{
+  line-height: 2;
+} */
+
+.radio-group input,
+.checkbox-group input {
+  width: auto;
+}
+
+.insurance-check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.insurance-check input {
+  width: auto;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+}
+
+.save-draft-btn {
+  background: white;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.submit-btn {
+  background: #2563eb;
+  color: white;
+}
+
+@media (max-width: 600px) {
+
+  .form-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    width: 100%;
+  }
+
+}
